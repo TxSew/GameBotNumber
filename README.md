@@ -64,7 +64,7 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 
 **Components Diagram:**
 
-![Flow Diagram](/ERD.svg)
+![Flow Diagram](/components.svg)
 
 **Giải thích**
 
