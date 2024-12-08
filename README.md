@@ -293,7 +293,7 @@ CREATE TABLE FAQs (
 12.   Bảng PLAYERS ↔ Bảng LEADERBOARD: Một người chơi (PLAYERS) có thể xuất hiện trong nhiều bảng xếp hạng (LEADERBOARD). (N:M)
 13.   Bảng USERS ↔ Bảng PAYMENTS: Một người dùng (USERS) có thể thực hiện nhiều thanh toán (PAYMENTS). (1:N)
 
-![Flow Diagram](/entityERD.png)
+![Flow Diagram](/ERD.svg)
 
 ```
 erDiagram
