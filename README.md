@@ -67,10 +67,21 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 ![Flow Diagram](/components.svg)
 
 **Giải thích**
+- Đăng ký: Người dùng sẽ chọn một trong ba loại người dùng (Families, Tutors) và điền thông tin email, quốc gia và thanh toán qua Stripe.
 
--  User tương tác với Web Client.
--  Web Client gửi yêu cầu tới Numbots Service API.
--  Numbots Service API đọc/ghi dữ liệu vào Database.
+- Đăng nhập: Người dùng sẽ chọn vai trò của mình (School, Families, Tutors), sau đó đăng nhập. Nếu là School, người dùng có thể chọn giữa Học sinh hoặc Giáo viên. Nếu là Tutors, sẽ có lựa chọn Gia Sư hoặc Người Dạy Kèm.
+
+- Quên mật khẩu: Người dùng nhập email để nhận mật khẩu mới từ hệ thống.
+
+- Quản lý User: Sau khi đăng nhập thành công, người dùng có thể xem danh sách user, thống kê tiến trình, mục tiêu học tập, thời gian hoạt động, hoặc chỉnh sửa/xóa người dùng.
+
+- Chơi: Người dùng có thể chọn chế độ game là Story hoặc Challenge, và trong Challenge có các loại trò chơi như Subitising, Number Bonds, Adding, Subtracting.
+
+- Trợ giúp và FAQs: Redirect đến link trợ giúp và FAQs.
+
+- Rewards Shop: Redirect đến trang cửa hàng để mua hàng thưởng.
+
+- Billing: Hiển thị thông tin thanh toán chi tiết.
 
 ---
 
