@@ -64,7 +64,7 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 
 **Components Diagram:**
 
-![Flow Diagram](/home/nham/Downloads/components.png)
+![Flow Diagram](/components.png)
 
 **Giải thích**
 
@@ -76,7 +76,7 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 
 ## 4. 🔄 Flow
 
-![Flow Diagram](/home/nham/Downloads/flow.png)
+![Flow Diagram](/flow.png)
 
 ### Giải thích các bước chính:
 
