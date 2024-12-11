@@ -67,6 +67,7 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 ![Flow Diagram](/cponent.png)
 
 **Giải thích**
+
 **1. Chọn chế độ chơi:**
 
 - GameBotNumberClient (Client): Người chơi bắt đầu quá trình chơi bằng cách chọn chế độ chơi mà họ muốn tham gia. Đây có thể là các chế độ chơi khác nhau như chơi theo số, thời gian, v.v.
