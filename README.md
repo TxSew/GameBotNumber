@@ -68,16 +68,23 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 
 **Giải thích**
 **1. Chọn chế độ chơi:**
+
 - GameBotNumberClient (Client): Người chơi bắt đầu quá trình chơi bằng cách chọn chế độ chơi mà họ muốn tham gia. Đây có thể là các chế độ chơi khác nhau như chơi theo số, thời gian, v.v.
 GameLogic Module (Server): Sau khi người chơi chọn chế độ, Client gửi yêu cầu về chế độ chơi đến GameLogic.
+
 **2. Truy vấn thông tin chế độ chơi:**
+
 - GameLogic: GameLogic gửi yêu cầu tới GameBotNumberServer DB để truy vấn các thông tin cần thiết cho chế độ chơi đã chọn (ví dụ: câu hỏi, mức độ khó, v.v.).
 - GameBotNumberServer DB: DB trả lại thông tin chế độ chơi cho GameLogic.
+  
 **3. Trả dữ liệu chế độ chơi:**
 - GameLogic: Sau khi nhận thông tin từ DB, GameLogic gửi dữ liệu về chế độ chơi (ví dụ: câu hỏi, luật chơi) tới GameBotNumberClient để hiển thị cho người chơi.
+  
 **4. Người chơi chọn kết quả/lựa chọn:**
 - GameBotNumberClient: Người chơi thực hiện các lựa chọn trong game và gửi kết quả (ví dụ: câu trả lời hoặc lựa chọn trong game) đến GameLogic.
+  
 **5. Xử lý gameplay và cập nhật tiến trình:**
+
 - GameLogic: GameLogic xử lý gameplay, tiến hành xử lý các logic về game, tính điểm, kiểm tra kết quả, v.v. Sau đó, GameLogic gửi yêu cầu đến Game Engine để thực hiện các tính toán cần thiết cho game.
 - Game Engine: Game Engine thực hiện các logic gameplay, tính điểm hoặc các yếu tố liên quan đến tiến trình của người chơi. Sau khi xử lý xong, Game Engine lưu kết quả và tiến trình vào GameBotNumberServer DB.
 
