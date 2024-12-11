@@ -64,7 +64,7 @@ Hệ thống Numbots Clone sẽ tạo điều kiện thuận lợi cho việc h�
 
 **Components Diagram:**
 
-![Flow Diagram](/cponent.jpg)
+![Flow Diagram](/cponent.png)
 
 **Giải thích**
 1. Chọn chế độ chơi:
@@ -85,30 +85,15 @@ GameLogic Module (Server): Sau khi người chơi chọn chế độ, Client g�
 
 ## 4. 🔄 Flow
 
-![Flow Diagram](/flow.png)
+![Flow Diagram](/fl.png)
 
 ### Giải thích các bước chính:
 
-1. **Đăng nhập:**
-
-   -  Client gửi thông tin đăng nhập đến API Gateway.
-   -  API xác thực thông qua Server và kiểm tra dữ liệu trong Database.
-   -  Trả về token để xác thực người dùng.
-
-2. **Lấy câu hỏi:**
-
-   -  Người dùng chọn chế độ chơi (Story hoặc Thử thách).
-   -  Client gửi yêu cầu đến API để lấy danh sách câu hỏi.
-   -  API truy vấn dữ liệu từ Database thông qua Server.
-
-3. **Gửi kết quả:**
-
-   -  Client gửi kết quả câu trả lời lên API.
-   -  API xử lý dữ liệu, lưu tiến trình và điểm số vào Database.
-
-4. **Cập nhật bảng xếp hạng:**
-   -  Sau khi hoàn thành, Client yêu cầu cập nhật bảng xếp hạng.
-   -  API truy vấn dữ liệu từ Server để hiển thị bảng xếp hạng mới nhất.
+- Đăng nhập/Đăng ký: Người chơi xác thực thông tin để truy cập hệ thống.
+- Bắt đầu chơi: Người chơi chọn chế độ chơi và Server lấy dữ liệu từ Database để khởi động game.
+- Vòng lặp chơi game: Người chơi gửi các lựa chọn hoặc kết quả trong khi chơi. Server xử lý logic và lưu tiến trình vào Database.
+- Xem tiến trình hoặc bảng xếp hạng: Người chơi yêu cầu dữ liệu liên quan đến tiến trình hoặc bảng xếp hạng, Server lấy dữ liệu từ Database và trả lại.
+- Luồng này mô tả hoạt động cốt lõi, phù hợp để tập trung vào cơ chế chính của game mà không bị phân tán bởi chi tiết cụ thể của từng chế độ chơi.
 
 ---
 
